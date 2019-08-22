@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pesanan"
+    android:id="@+id/constraintPesan"
+    android:background="#ffff">
+
+    <TextView
+        android:id="@+id/txt_gojek"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="GOJEK"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:background="#74DA01"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintPesan"
+        app:layout_constraintRight_toRightOf="@id/constraintPesan"
+        app:layout_constraintTop_toTopOf="@id/constraintPesan"/>
+
+
+    <ImageView
+        android:id="@+id/img_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deliv"
+        android:paddingTop="100dp"
+        app:layout_constraintRight_toRightOf="@id/constraintPesan"
+        app:layout_constraintLeft_toLeftOf="@id/constraintPesan"
+        app:layout_constraintTop_toBottomOf="@id/txt_gojek" />
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        app:layout_constraintRight_toRightOf="@id/constraintPesan"
+        app:layout_constraintLeft_toLeftOf="@id/constraintPesan"
+        app:layout_constraintTop_toBottomOf="@id/img_pesan"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Nama"
+            android:textSize="25dp"
+            android:background="#74D902"
+            android:textColor="#000000"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Alamat"
+            android:textSize="25dp"
+            android:background="#74D902"
+            android:textColor="#000000"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Pesanan"
+            android:textSize="25dp"
+            android:background="#74D902"
+            android:textColor="#000000"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        app:layout_constraintTop_toBottomOf="@id/grid1"
+        app:layout_constraintLeft_toLeftOf="@id/constraintPesan"
+        app:layout_constraintRight_toRightOf="@id/constraintPesan">
+
+        <TextView
+            android:id="@+id/txt_namaResult"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Iqbal"
+            android:textSize="20dp"
+            android:background="#D83F14"
+            android:textColor="#ffff"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txt_alamatResult"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Bandung"
+            android:textSize="20dp"
+            android:background="#D83F14"
+            android:textColor="#ffff"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_pesananResult"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Mie Ayam"
+            android:textSize="20dp"
+            android:background="#D83F14"
+            android:textColor="#ffff"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>

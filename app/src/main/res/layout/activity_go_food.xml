@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoFood"
+    android:id="@+id/constraintFood"
+    android:background="#ffff">
+
+    <TextView
+        android:id="@+id/txt_gojek"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="GOJEK"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:background="#74DA01"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintFood"
+        app:layout_constraintRight_toRightOf="@id/constraintFood"
+        app:layout_constraintTop_toTopOf="@id/constraintFood"/>
+
+
+    <ImageView
+        android:id="@+id/logo_food"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/menu_gofood"
+        android:paddingTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_gojek"
+        app:layout_constraintLeft_toLeftOf="@id/constraintFood"
+        app:layout_constraintRight_toRightOf="@id/constraintFood"/>
+
+    <TextView
+        android:id="@+id/txt_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Food"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#34CE26"
+        android:paddingTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/logo_food"
+        app:layout_constraintRight_toRightOf="@id/constraintFood"
+        app:layout_constraintLeft_toLeftOf="@id/constraintFood"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintFood"
+        app:layout_constraintRight_toRightOf="@id/constraintFood"
+        app:layout_constraintTop_toBottomOf="@id/txt_food">
+
+        <LinearLayout
+            android:id="@+id/linear1edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/txt_nama"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Nama"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear1edit">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/txt_alamat"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Alamat"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear3edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear2edit">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/txt_pesanan"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Pesan"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="Order"
+        android:textColor="#ffff"
+        android:background="#2CC113"
+        app:layout_constraintTop_toBottomOf="@id/relative"/>
+</android.support.constraint.ConstraintLayout>
