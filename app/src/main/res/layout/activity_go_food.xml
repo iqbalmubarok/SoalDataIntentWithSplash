@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GoFood"
@@ -22,7 +25,6 @@
         app:layout_constraintLeft_toLeftOf="@id/constraintFood"
         app:layout_constraintRight_toRightOf="@id/constraintFood"
         app:layout_constraintTop_toTopOf="@id/constraintFood"/>
-
 
     <ImageView
         android:id="@+id/logo_food"
@@ -148,3 +150,4 @@
         android:background="#2CC113"
         app:layout_constraintTop_toBottomOf="@id/relative"/>
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
